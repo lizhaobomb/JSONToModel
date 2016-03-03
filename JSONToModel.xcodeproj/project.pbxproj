@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1A403901C8881430008CDE4 /* LZClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A4038F1C8881430008CDE4 /* LZClassInfo.m */; };
+		F1A403951C8885290008CDE4 /* LZJsonFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403921C8885290008CDE4 /* LZJsonFormat.m */; };
+		F1A403961C8885290008CDE4 /* LZJsonFormatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403941C8885290008CDE4 /* LZJsonFormatManager.m */; };
 		F1CC91C41C0DF0EB00328FB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C31C0DF0EB00328FB0 /* AppDelegate.m */; };
 		F1CC91C71C0DF0EB00328FB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C61C0DF0EB00328FB0 /* main.m */; };
 		F1CC91CA1C0DF0EB00328FB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C91C0DF0EB00328FB0 /* ViewController.m */; };
@@ -15,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1A4038E1C8881430008CDE4 /* LZClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZClassInfo.h; sourceTree = "<group>"; };
+		F1A4038F1C8881430008CDE4 /* LZClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZClassInfo.m; sourceTree = "<group>"; };
+		F1A403911C8885290008CDE4 /* LZJsonFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZJsonFormat.h; sourceTree = "<group>"; };
+		F1A403921C8885290008CDE4 /* LZJsonFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZJsonFormat.m; sourceTree = "<group>"; };
+		F1A403931C8885290008CDE4 /* LZJsonFormatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZJsonFormatManager.h; sourceTree = "<group>"; };
+		F1A403941C8885290008CDE4 /* LZJsonFormatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZJsonFormatManager.m; sourceTree = "<group>"; };
 		F1CC91BF1C0DF0EB00328FB0 /* JSONToModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONToModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CC91C21C0DF0EB00328FB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1CC91C31C0DF0EB00328FB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,6 +46,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1A4038D1C88811E0008CDE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1A403911C8885290008CDE4 /* LZJsonFormat.h */,
+				F1A403921C8885290008CDE4 /* LZJsonFormat.m */,
+				F1A403931C8885290008CDE4 /* LZJsonFormatManager.h */,
+				F1A403941C8885290008CDE4 /* LZJsonFormatManager.m */,
+				F1A4038E1C8881430008CDE4 /* LZClassInfo.h */,
+				F1A4038F1C8881430008CDE4 /* LZClassInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F1CC91B61C0DF0EB00328FB0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +78,7 @@
 		F1CC91C11C0DF0EB00328FB0 /* JSONToModel */ = {
 			isa = PBXGroup;
 			children = (
+				F1A4038D1C88811E0008CDE4 /* Model */,
 				F1CC91C21C0DF0EB00328FB0 /* AppDelegate.h */,
 				F1CC91C31C0DF0EB00328FB0 /* AppDelegate.m */,
 				F1CC91C81C0DF0EB00328FB0 /* ViewController.h */,
@@ -145,6 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A403961C8885290008CDE4 /* LZJsonFormatManager.m in Sources */,
+				F1A403951C8885290008CDE4 /* LZJsonFormat.m in Sources */,
+				F1A403901C8881430008CDE4 /* LZClassInfo.m in Sources */,
 				F1CC91CA1C0DF0EB00328FB0 /* ViewController.m in Sources */,
 				F1CC91C71C0DF0EB00328FB0 /* main.m in Sources */,
 				F1CC91C41C0DF0EB00328FB0 /* AppDelegate.m in Sources */,
@@ -287,6 +313,7 @@
 				F1CC91D51C0DF0EB00328FB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
