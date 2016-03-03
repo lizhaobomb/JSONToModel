@@ -28,10 +28,9 @@
     
     // Update the view, if already loaded.
 }
+
 - (IBAction)validateJson:(NSButton *)sender {
     NSLog(@"button clicked!!!");
-    [self saveFile];
-    return;
     NSString *jsonString = [[self.inputJsonTextView string] stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSLog(@"json = %@",jsonString);
     
