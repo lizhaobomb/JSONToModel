@@ -6,28 +6,33 @@
 //  Copyright © 2015年 lizhao. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LZJsonInputViewController.h"
 #import "AppDelegate.h"
 
-@interface ViewController ()
+@interface LZJsonInputViewController () <NSTextViewDelegate,NSWindowDelegate>
 
 @property (nonatomic, strong) NSString *path;
 
 @end
 
-@implementation ViewController
+@implementation LZJsonInputViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)windowDidLoad {
+    [super windowDidLoad];
+    
+    self.inputJsonTextView.delegate = self;
+    self.window.delegate = self;
+
     
     // Do any additional setup after loading the view.
 }
 
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-    
-    // Update the view, if already loaded.
+-(void)windowWillClose:(NSNotification *)notification{
+    if ([self.delegate respondsToSelector:@selector(windowWillClose)]) {
+        [self.delegate windowWillClose];
+    }
 }
+
 
 - (IBAction)validateJson:(NSButton *)sender {
     NSLog(@"button clicked!!!");

@@ -10,9 +10,16 @@
 		F1A403901C8881430008CDE4 /* LZClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A4038F1C8881430008CDE4 /* LZClassInfo.m */; };
 		F1A403951C8885290008CDE4 /* LZJsonFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403921C8885290008CDE4 /* LZJsonFormat.m */; };
 		F1A403961C8885290008CDE4 /* LZJsonFormatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403941C8885290008CDE4 /* LZJsonFormatManager.m */; };
+		F1A403991C89BF750008CDE4 /* ESFormatInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403981C89BF750008CDE4 /* ESFormatInfo.m */; };
+		F1A4039C1C89BFBF0008CDE4 /* ESPair.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A4039B1C89BFBF0008CDE4 /* ESPair.m */; };
+		F1A4039F1C89C0F40008CDE4 /* ESJsonFormatSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A4039E1C89C0F40008CDE4 /* ESJsonFormatSetting.m */; };
+		F1A403A21C89C1260008CDE4 /* ESPbxprojInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403A11C89C1260008CDE4 /* ESPbxprojInfo.m */; };
+		F1A403A71C89D2EB0008CDE4 /* ESSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403A51C89D2EB0008CDE4 /* ESSettingController.m */; };
+		F1A403A81C89D2EB0008CDE4 /* ESSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A403A61C89D2EB0008CDE4 /* ESSettingController.xib */; };
+		F1A403AC1C89D32B0008CDE4 /* ESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A403AB1C89D32B0008CDE4 /* ESUtils.m */; };
 		F1CC91C41C0DF0EB00328FB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C31C0DF0EB00328FB0 /* AppDelegate.m */; };
 		F1CC91C71C0DF0EB00328FB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C61C0DF0EB00328FB0 /* main.m */; };
-		F1CC91CA1C0DF0EB00328FB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C91C0DF0EB00328FB0 /* ViewController.m */; };
+		F1CC91CA1C0DF0EB00328FB0 /* LZJsonInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CC91C91C0DF0EB00328FB0 /* LZJsonInputViewController.m */; };
 		F1CC91CC1C0DF0EB00328FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CC91CB1C0DF0EB00328FB0 /* Assets.xcassets */; };
 		F1CC91CF1C0DF0EB00328FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CC91CD1C0DF0EB00328FB0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,12 +31,26 @@
 		F1A403921C8885290008CDE4 /* LZJsonFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZJsonFormat.m; sourceTree = "<group>"; };
 		F1A403931C8885290008CDE4 /* LZJsonFormatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZJsonFormatManager.h; sourceTree = "<group>"; };
 		F1A403941C8885290008CDE4 /* LZJsonFormatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZJsonFormatManager.m; sourceTree = "<group>"; };
+		F1A403971C89BF750008CDE4 /* ESFormatInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFormatInfo.h; sourceTree = "<group>"; };
+		F1A403981C89BF750008CDE4 /* ESFormatInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESFormatInfo.m; sourceTree = "<group>"; };
+		F1A4039A1C89BFBF0008CDE4 /* ESPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPair.h; sourceTree = "<group>"; };
+		F1A4039B1C89BFBF0008CDE4 /* ESPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPair.m; sourceTree = "<group>"; };
+		F1A4039D1C89C0F40008CDE4 /* ESJsonFormatSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESJsonFormatSetting.h; sourceTree = "<group>"; };
+		F1A4039E1C89C0F40008CDE4 /* ESJsonFormatSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESJsonFormatSetting.m; sourceTree = "<group>"; };
+		F1A403A01C89C1260008CDE4 /* ESPbxprojInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPbxprojInfo.h; sourceTree = "<group>"; };
+		F1A403A11C89C1260008CDE4 /* ESPbxprojInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPbxprojInfo.m; sourceTree = "<group>"; };
+		F1A403A31C89C4700008CDE4 /* LZJsonFormatCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZJsonFormatCommonDefine.h; sourceTree = "<group>"; };
+		F1A403A41C89D2EB0008CDE4 /* ESSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESSettingController.h; sourceTree = "<group>"; };
+		F1A403A51C89D2EB0008CDE4 /* ESSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESSettingController.m; sourceTree = "<group>"; };
+		F1A403A61C89D2EB0008CDE4 /* ESSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ESSettingController.xib; sourceTree = "<group>"; };
+		F1A403AA1C89D32B0008CDE4 /* ESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESUtils.h; sourceTree = "<group>"; };
+		F1A403AB1C89D32B0008CDE4 /* ESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESUtils.m; sourceTree = "<group>"; };
 		F1CC91BF1C0DF0EB00328FB0 /* JSONToModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONToModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CC91C21C0DF0EB00328FB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1CC91C31C0DF0EB00328FB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F1CC91C61C0DF0EB00328FB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F1CC91C81C0DF0EB00328FB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F1CC91C91C0DF0EB00328FB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1CC91C81C0DF0EB00328FB0 /* LZJsonInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZJsonInputViewController.h; sourceTree = "<group>"; };
+		F1CC91C91C0DF0EB00328FB0 /* LZJsonInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZJsonInputViewController.m; sourceTree = "<group>"; };
 		F1CC91CB1C0DF0EB00328FB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1CC91CE1C0DF0EB00328FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1CC91D01C0DF0EB00328FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +70,17 @@
 		F1A4038D1C88811E0008CDE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F1A403A41C89D2EB0008CDE4 /* ESSettingController.h */,
+				F1A403A51C89D2EB0008CDE4 /* ESSettingController.m */,
+				F1A403A61C89D2EB0008CDE4 /* ESSettingController.xib */,
+				F1A403A01C89C1260008CDE4 /* ESPbxprojInfo.h */,
+				F1A403A11C89C1260008CDE4 /* ESPbxprojInfo.m */,
+				F1A4039D1C89C0F40008CDE4 /* ESJsonFormatSetting.h */,
+				F1A4039E1C89C0F40008CDE4 /* ESJsonFormatSetting.m */,
+				F1A4039A1C89BFBF0008CDE4 /* ESPair.h */,
+				F1A4039B1C89BFBF0008CDE4 /* ESPair.m */,
+				F1A403971C89BF750008CDE4 /* ESFormatInfo.h */,
+				F1A403981C89BF750008CDE4 /* ESFormatInfo.m */,
 				F1A403911C8885290008CDE4 /* LZJsonFormat.h */,
 				F1A403921C8885290008CDE4 /* LZJsonFormat.m */,
 				F1A403931C8885290008CDE4 /* LZJsonFormatManager.h */,
@@ -57,6 +89,15 @@
 				F1A4038F1C8881430008CDE4 /* LZClassInfo.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F1A403A91C89D32B0008CDE4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1A403AA1C89D32B0008CDE4 /* ESUtils.h */,
+				F1A403AB1C89D32B0008CDE4 /* ESUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F1CC91B61C0DF0EB00328FB0 = {
@@ -78,15 +119,17 @@
 		F1CC91C11C0DF0EB00328FB0 /* JSONToModel */ = {
 			isa = PBXGroup;
 			children = (
+				F1A403A91C89D32B0008CDE4 /* Utils */,
 				F1A4038D1C88811E0008CDE4 /* Model */,
 				F1CC91C21C0DF0EB00328FB0 /* AppDelegate.h */,
 				F1CC91C31C0DF0EB00328FB0 /* AppDelegate.m */,
-				F1CC91C81C0DF0EB00328FB0 /* ViewController.h */,
-				F1CC91C91C0DF0EB00328FB0 /* ViewController.m */,
+				F1CC91C81C0DF0EB00328FB0 /* LZJsonInputViewController.h */,
+				F1CC91C91C0DF0EB00328FB0 /* LZJsonInputViewController.m */,
 				F1CC91CB1C0DF0EB00328FB0 /* Assets.xcassets */,
 				F1CC91CD1C0DF0EB00328FB0 /* Main.storyboard */,
 				F1CC91D01C0DF0EB00328FB0 /* Info.plist */,
 				F1CC91C51C0DF0EB00328FB0 /* Supporting Files */,
+				F1A403A31C89C4700008CDE4 /* LZJsonFormatCommonDefine.h */,
 			);
 			path = JSONToModel;
 			sourceTree = "<group>";
@@ -157,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CC91CC1C0DF0EB00328FB0 /* Assets.xcassets in Resources */,
+				F1A403A81C89D2EB0008CDE4 /* ESSettingController.xib in Resources */,
 				F1CC91CF1C0DF0EB00328FB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,12 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A403A71C89D2EB0008CDE4 /* ESSettingController.m in Sources */,
+				F1A403AC1C89D32B0008CDE4 /* ESUtils.m in Sources */,
+				F1A4039F1C89C0F40008CDE4 /* ESJsonFormatSetting.m in Sources */,
 				F1A403961C8885290008CDE4 /* LZJsonFormatManager.m in Sources */,
 				F1A403951C8885290008CDE4 /* LZJsonFormat.m in Sources */,
 				F1A403901C8881430008CDE4 /* LZClassInfo.m in Sources */,
-				F1CC91CA1C0DF0EB00328FB0 /* ViewController.m in Sources */,
+				F1A403991C89BF750008CDE4 /* ESFormatInfo.m in Sources */,
+				F1A403A21C89C1260008CDE4 /* ESPbxprojInfo.m in Sources */,
+				F1CC91CA1C0DF0EB00328FB0 /* LZJsonInputViewController.m in Sources */,
 				F1CC91C71C0DF0EB00328FB0 /* main.m in Sources */,
 				F1CC91C41C0DF0EB00328FB0 /* AppDelegate.m in Sources */,
+				F1A4039C1C89BFBF0008CDE4 /* ESPair.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

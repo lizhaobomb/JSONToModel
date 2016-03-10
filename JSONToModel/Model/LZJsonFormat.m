@@ -9,14 +9,14 @@
 #import "LZJsonFormat.h"
 #import "LZJsonFormatManager.h"
 #import "ESFormatInfo.h"
-#import "ESInputJsonController.h"
+#import "LZJsonInputViewController.h"
 #import "ESSettingController.h"
 #import "ESPbxprojInfo.h"
 #import "ESJsonFormatSetting.h"
-#import "ESClassInfo.h"
-
+#import "LZClassInfo.h"
+#import "LZJsonFormatCommonDefine.h"
 @interface LZJsonFormat()<ESInputJsonControllerDelegate>
-@property (nonatomic, strong) ESInputJsonController *inputCtrl;
+@property (nonatomic, strong) LZJsonInputViewController *inputCtrl;
 @property (nonatomic, strong) ESSettingController *settingCtrl;
 @property (nonatomic, strong) id eventMonitor;
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
@@ -83,7 +83,7 @@
 }
 
 -(void)outputResult:(NSNotification*)noti{
-    ESClassInfo *classInfo = noti.object;
+    LZClassInfo *classInfo = noti.object;
     if ([ESJsonFormatSetting defaultSetting].outputToFiles) {
         //选择保存路径
         NSOpenPanel *panel = [NSOpenPanel openPanel];
@@ -180,7 +180,7 @@
         return;
     }
     self.notiTag = NO;
-    self.inputCtrl = [[ESInputJsonController alloc] initWithWindowNibName:@"ESInputJsonController"];
+    self.inputCtrl = [[LZJsonInputViewController alloc] initWithWindowNibName:@"ESInputJsonController"];
     self.inputCtrl.delegate = self;
     [self.inputCtrl showWindow:self.inputCtrl];
 }

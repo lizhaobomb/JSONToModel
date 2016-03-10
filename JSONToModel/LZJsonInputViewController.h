@@ -8,7 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@protocol ESInputJsonControllerDelegate <NSObject>
+
+@optional
+-(void)windowWillClose;
+@end
+
+
+@interface LZJsonInputViewController : NSWindowController
+
+@property (nonatomic, weak) id<ESInputJsonControllerDelegate> delegate;
 
 @property (unsafe_unretained) IBOutlet NSTextView *inputJsonTextView;
 

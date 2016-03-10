@@ -13,8 +13,8 @@
 #import "LZJsonFormat.h"
 #import "ESJsonFormatSetting.h"
 #import "ESPbxprojInfo.h"
-
-
+#import "LZJsonFormatCommonDefine.h"
+#import "ESUtils.h"
 @interface LZJsonFormatManager()
 
 @end
@@ -24,7 +24,7 @@
     NSMutableString *resultStr = [NSMutableString string];
     NSDictionary *dic = classInfo.classDic;
     [dic enumerateKeysAndObjectsUsingBlock:^(id key, NSObject *obj, BOOL *stop) {
-        if ([ESJsonFormat instance].isSwift) {
+        if ([LZJsonFormat instance].isSwift) {
             [resultStr appendFormat:@"\n%@\n",[self formatSwiftWithKey:key value:obj classInfo:classInfo]];
         }else{
             [resultStr appendFormat:@"\n%@\n",[self formatObjcWithKey:key value:obj classInfo:classInfo]];
@@ -150,7 +150,7 @@
 
 
 + (NSString *)parseClassHeaderContentWithClassInfo:(LZClassInfo *)classInfo{
-    if ([ESJsonFormat instance].isSwift) {
+    if ([LZJsonFormat instance].isSwift) {
         return [self parseClassContentForSwiftWithClassInfo:classInfo];
     }else{
         return [self parseClassHeaderContentForOjbcWithClassInfo:classInfo];
@@ -159,7 +159,7 @@
 
 + (NSString *)parseClassImpContentWithClassInfo:(LZClassInfo *)classInfo{
     
-    if ([ESJsonFormat instance].isSwift) {
+    if ([LZJsonFormat instance].isSwift) {
         return @"";
     }
     
@@ -308,7 +308,7 @@
 
 
 + (void)createFileWithFolderPath:(NSString *)folderPath classInfo:(LZClassInfo *)classInfo{
-    if (![ESJsonFormat instance].isSwift) {
+    if (![LZJsonFormat instance].isSwift) {
         //创建.h文件
         [self createFileWithFileName:[folderPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.h",classInfo.className]] content:classInfo.classContentForH];
         //创建.m文件
